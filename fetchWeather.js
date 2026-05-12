@@ -24,7 +24,7 @@ export async function fetchWeather() {
         }
 
         const data = await response.json()
-        const nowUTC = new Date().toISOString()
+        const nowUTC = new Date().toISOString()// yyyy-mm-dd 2026-05-12
         data._last_updated_utc = nowUTC
         fs.writeFileSync(WEATHER_FILE, JSON.stringify(data, null, 2))
 

@@ -1,4 +1,4 @@
-import express from 'express'
+import express from 'express' //ES6 Module - JS file with exported code
 import dotenv from 'dotenv'
 import fs from 'fs'
 import path from 'path'
